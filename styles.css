@@ -1,0 +1,132 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: "Times New Roman", Times, serif;
+    background: linear-gradient(135deg, #a8e6cf, #dcedc1, #ffd3b6, #ffaaa5);
+    animation: backgroundAnimation 10s infinite alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background: linear-gradient(135deg, #a8e6cf, #dcedc1, #ffd3b6, #ffaaa5);
+    }
+    100% {
+        background: linear-gradient(135deg, #ffaaa5, #ffd3b6, #dcedc1, #a8e6cf);
+    }
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    overflow-y: auto;
+    height: 90vh;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #333;
+    animation: fadeIn 2s;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #555;
+    animation: fadeIn 2s;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    animation: fadeIn 2s;
+}
+
+.bio h2, .qualities h2, .extra-images h2, .timeline h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.bio p, .qualities p, .qualities ul, .timeline ul {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #666;
+}
+
+.qualities ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.qualities ul li {
+    margin-bottom: 10px;
+}
+
+.extra-images .image-gallery {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.extra-images .image-gallery img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 10px;
+    animation: slideInUp 2s;
+}
+
+.timeline ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.timeline ul li {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 1em;
+    color: #999;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
